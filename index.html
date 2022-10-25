@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>MyExcel</title>
+</head>
+
+<body>
+    <div class="page-actions-cont">
+        <div class="page-action selected-page-action">Home</div>
+        <div class="page-action">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="cellprop-actions-cont">
+        <img class="copy" src="https://img.icons8.com/fluency-systems-regular/96/000000/copy.png"/>
+        <!-- <img class="copy" src="https://img.icons8.com/fluency-systems-filled/96/000000/copy.png"/> -->
+        <img class="cut" src="https://img.icons8.com/external-compact-zufarizal-robiyanto/50/000000/external-cut-compact-ui-essential-vol2-compact-zufarizal-robiyanto.png"/>
+        <!-- <img class="cut" src="https://img.icons8.com/external-febrian-hidayat-basic-outline-febrian-hidayat/96/000000/external-cut-user-interface-febrian-hidayat-basic-outline-febrian-hidayat.png"/> -->
+        <img class="paste" src="https://img.icons8.com/sf-ultralight/100/000000/paste.png"/>
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+        </select>
+        <select class="font-size-prop">
+            <option value="--">--</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+            <option value="32">32</option>
+            <option value="36">36</option>
+            <option value="38">38</option>
+            <option value="40">40</option>
+            <option value="46">46</option>
+            <option value="52">52</option>
+        </select>
+        <img class="bold" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/60/000000/external-bold-your-text-field-on-document-file-text-light-tal-revivo.png"/>
+        <img class="italic" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/100/000000/external-italics-text-style-funtion-button-for-document-application-text-light-tal-revivo.png"/>
+        <img class="underline" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/96/000000/external-underline-highlited-text-tool-in-word-processing-document-text-light-tal-revivo.png"/>
+        <div class="color-prop">
+            <img  class="text-color" src="https://img.icons8.com/fluency-systems-regular/96/000000/text-color.png"/>
+            <input type="color" class="font-color-prop">
+        </div>
+        <div class="color-prop">
+            <img class="color-fill" src="https://img.icons8.com/sf-ultralight-filled/100/000000/fill-color.png"/>
+            <input type="color" class="BGcolor-prop">
+        </div>
+        <img class="alignment left" src="https://img.icons8.com/ios/100/000000/align-left.png"/>
+        <img class="alignment center" src="https://img.icons8.com/ios/100/000000/align-center.png"/>
+        <img class="alignment right" src="https://img.icons8.com/ios/100/000000/align-right.png"/>
+        <img class="remove-format" src="https://img.icons8.com/fluency-systems-regular/96/000000/remove-format.png"/>
+        <img class="upload" src="https://img.icons8.com/ios/100/000000/upload-to-cloud--v1.png"/>
+        <img class="download" src="https://img.icons8.com/ios/100/000000/download-from-cloud--v1.png"/>
+        
+    </div>
+    <div class="formula-actions-cont">
+        <input type="text" readonly class="address-bar">
+        <img class="formula-icon" src="https://img.icons8.com/small/96/000000/formula-fx.png"/>
+        <input type="text" spellcheck="false" class="formula-bar">
+    </div>
+    <div class="grid-cont">
+        <div class="top-left dummy-box"></div>
+        <div class="address-col-cont"></div>
+        <div class="cells-cont">
+            <div class="address-row-cont"></div>
+        </div>
+    </div>
+    <div class="sheet-actions-cont">
+        <div class="sheet-add-icon">
+            <img class="add" src="https://img.icons8.com/ios/100/000000/plus-2-math.png"/>
+        </div>
+        <div class="sheets-folder-cont">
+            <!-- <div id="0" class="sheet-folder">
+                <div class="sheet-cont">Sheet 1</div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./grid.js"></script>
+    <script src="./cutCopyPaste.js"></script>
+    <script src="./sheetsHandling.js"></script>
+    <script src="./cycleValidation.js"></script>
+    <script src="./cell-properties.js"></script>
+    <script src="./cyclicPathTrace.js"></script>
+    <script src="./formula.js"></script>
+    <script src="./openSave.js"></script>
+</body>
+
+</html>
